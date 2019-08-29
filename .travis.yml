@@ -3,7 +3,9 @@ jdk:
   - oraclejdk8
 before_install:
   - chmod +x mvnw
+  - chmod +x gradlew
 dist: trusty
 instal:
     - mvn -N io.takari:maven:wrapper
     - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
