@@ -8,6 +8,8 @@ jdk:
     packages:
     - libxml2-utils
 
+before_install:
+  - chmod +x mvnw
 # skip the Travis-CI install phase because Maven handles that directly
 install:
 - "true"
